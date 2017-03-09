@@ -1,0 +1,64 @@
+
+$red:    #cc2929;
+$orange: #ff8805;
+$yellow: #ffc800;
+$green:  #00a651;
+$blue:   #2e5ce6;
+
+
+$grey-superdark:            #12171f;
+$grey-extradark:            #212733;
+$grey-dark:                 #39404d;
+$grey-mid:                  #777e8c;
+$grey-light:                #a1a7b3;
+$grey-extralight:           #d7dae0;
+$grey-superlight:           #edeff2;
+
+
+$brand-primary:             #052b67;
+$brand-secondary:           $blue;
+$brand-tertiary:            $blue;
+$brand-success:             $green;
+$brand-info:                $yellow;
+$brand-warning:             $orange;
+$brand-danger:              $red;
+
+
+$blue-draft-home: rgb(40, 56, 88);
+$blue-draft-away: rgb(31, 43, 66);
+
+
+
+// the following colours were copied from eredivisie-client.
+// if you want to add more colours to those defined above, please follow these rules:
+// 1. do not use these variable names, create semantic names and assign the required colour to it.
+// 2. only add more colours to above if absolutely needed. use the closest match, designers almost never notice.
+// 3. try to not have more than 5 shades of grey defined - 7 should be considered the absolute maximum.
+
+$colorDark:    #000    !default;
+$colorLight:   #fff    !default;
+$colorLightAtOpacity30: rgba(255, 255, 255, .3) !default;
+$colorLightAtOpacity10: rgba(255, 255, 255, .1) !default;
+$color1:       #12171f !default;
+$color1AtOpacity30: rgba(18, 23, 31, .3) !default;
+$color1AtOpacity40: rgba(18, 23, 31, .4) !default;
+$color1AtOpacity60: rgba(18, 23, 31, .6) !default;
+$color2:       #212733 !default;
+$color3:       #39404d !default;
+$color4:       #777e8c !default;
+$color5:       #a1a7b3 !default;
+$color6:       #a1a7b3 !default;
+$color7:       #edeff2 !default;
+$color8:       #052b67 !default;
+$color9:       #2e5ce6 !default;
+$color10:      #00a651 !default;
+$color11:      #ffc800 !default;
+$color12:      #cc2929 !default;
+$color13:      #F75F00 !default;
+
+$color14:      #D7DAE0 !default;
+$color15:      #f8f8f8 !default;
+$color16:      #565C66 !default;
+$color17:      #979eaa !default;
+$color18:      #656b76 !default;
+$color19:      #DE0000 !default;

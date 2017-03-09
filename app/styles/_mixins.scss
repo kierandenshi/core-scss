@@ -1,0 +1,10 @@
+@import '~core/styles/mixins';
+
+// just because
+@mixin media-tablet-landscape {
+  @media(min-device-width : $tablet-min)
+  and (max-device-width : $tablet-max)
+  and (orientation: landscape) {
+    @content;
+  }
+}

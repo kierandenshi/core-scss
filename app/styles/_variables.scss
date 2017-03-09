@@ -1,0 +1,25 @@
+@import '~core/styles/variables';
+
+// location of images
+$images: '~static/images';
+
+// set the theme fonts
+$fonts-directory: '~static/fonts';
+$font-family-base: 'sintony';
+$font-family-decor: 'khand';
+
+// for the special case MQ
+$tablet-min: 768px;
+$tablet-max: 1024px;
+
+$container-width: 1044px;
+
+
+
+$app-header-height-mobile: 85px;
+$app-header-height-tablet: 125px;
+$app-header-height-desktop: 130px;
+
+$app-sidebar-width-mobile: 65vw;
+$app-sidebar-width-tablet: 512px;
+$app-sidebar-width-desktop: 512px;

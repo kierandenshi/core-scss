@@ -1,0 +1,17 @@
+@mixin gradient-with-image($image-url) {
+  background-color: $brand-primary;
+  background-image: url('#{$image-url}'),
+                    (linear-gradient(to top right, $brand-primary, $brand-secondary));
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@mixin default-background-gradient {
+  background-color: $grey-extradark;
+  background-image: linear-gradient(to bottom, rgb(40,55,85), $grey-extradark);
+}
+
+@mixin default-summary-gradient {
+  background-color: $brand-primary;
+  background-image: linear-gradient(to right, rgb(2, 19, 56), $brand-primary);
+}

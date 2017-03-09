@@ -1,0 +1,63 @@
+.form-group {
+
+  * {
+    box-sizing: border-box;
+  }
+
+  label {
+    display: block;
+  }
+
+  .form-control {
+    display: block;
+    border-radius: 4px;
+    padding: 6px;
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    background-color: white;
+    outline: none;
+    border-style: none;
+  }
+
+  input[type=checkbox],
+  input[type=radio] {
+    height: 1rem;
+    width: 1rem;
+  }
+
+}
+
+.form-group-inline {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  > * {
+    margin-left: 1rem;
+  }
+  > *:first-child {
+    margin-left: 0;
+  }
+}
+
+.form-group-combined {
+  .form-control-wrapper {
+    position: relative;
+    .form-control {
+      padding-right: 56px;
+    }
+    .btn {
+      margin: 0 !important;
+      position: absolute;
+      height: 100%;
+      right: 0;
+      top: 0;
+      width: 50px !important;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      overflow: hidden !important;
+      white-space: nowrap !important;
+    }
+  }
+}

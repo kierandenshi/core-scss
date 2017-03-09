@@ -1,0 +1,55 @@
+@font-face {
+  font-family: $font-family-base;
+  src: url('#{$fonts-directory}/sintony-regular-webfont.woff2') format('woff2'),
+       url('#{$fonts-directory}/sintony-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $font-family-base;
+  src: url('#{$fonts-directory}/sintony-bold-webfont.woff2') format('woff2'),
+       url('#{$fonts-directory}/sintony-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: $font-family-decor;
+    src: url('#{$fonts-directory}/khand-light-webfont.woff2') format('woff2'),
+         url('#{$fonts-directory}/khand-light-webfont.woff') format('woff');
+    font-weight: 300; // light
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $font-family-decor;
+    src: url('#{$fonts-directory}/khand-regular-webfont.woff2') format('woff2'),
+         url('#{$fonts-directory}/khand-regular-webfont.woff') format('woff');
+    font-weight: 400; // normal
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $font-family-decor;
+    src: url('#{$fonts-directory}/khand-medium-webfont.woff2') format('woff2'),
+         url('#{$fonts-directory}/khand-medium-webfont.woff') format('woff');
+    font-weight: 500; // medium
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $font-family-decor;
+    src: url('#{$fonts-directory}/khand-semibold-webfont.woff2') format('woff2'),
+         url('#{$fonts-directory}/khand-semibold-webfont.woff') format('woff');
+    font-weight: 600; // semibold
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $font-family-decor;
+    src: url('#{$fonts-directory}/khand-bold-webfont.woff2') format('woff2'),
+         url('#{$fonts-directory}/khand-bold-webfont.woff') format('woff');
+    font-weight: 700; // bold
+    font-style: normal;
+}

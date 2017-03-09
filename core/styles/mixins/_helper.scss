@@ -1,0 +1,47 @@
+@mixin cover-container {
+  top: 0; right: 0; bottom: 0; left: 0;
+  margin: auto;
+}
+
+@mixin fixed-cover {
+  position: fixed;
+  @include cover-container;
+}
+
+@mixin absolute-cover {
+  position: absolute;
+  @include cover-container;
+}
+
+@mixin flex-default {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin font-size($num) {
+  $rem-value: $num / 16;
+  font-size: $num + px;
+  font-size: $rem-value + rem;
+}
+
+@mixin interactive-element {
+  cursor: pointer;
+}
+
+@mixin set-placeholder-colour($colour) {
+  ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: $colour;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: $colour;
+    opacity: 1;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: $colour;
+    opacity: 1;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $colour;
+  }
+}

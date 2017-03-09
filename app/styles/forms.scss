@@ -1,0 +1,8 @@
+@import '~core/styles/forms';
+
+@include set-placeholder-colour($grey-mid);
+
+// this will have no effect for webkit / blink 
+option.placeholder {
+  color: $grey-mid;
+}

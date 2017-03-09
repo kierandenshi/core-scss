@@ -1,0 +1,152 @@
+@import '~app/styles/theme';
+
+.btn {
+
+  @include interactive-element;
+  @include flex-default;
+  border: 0;
+  outline: 0;
+  color: $white;
+  border-radius: 4px;
+  text-decoration: none;
+
+  &.btn-block {
+    height: 100%;
+    width: 100%;
+  }
+
+  &.btn-extrasmall {
+    width: 70px;
+    height: 30px;
+  }
+
+  &.btn-small {
+    width: 100px;
+    height: 30px;
+  }
+
+  &.btn-medium {
+    width: 200px;
+    height: 30px;
+  }
+
+  &.btn-large {
+    width: 200px;
+    height: 40px;
+  }
+
+  &.btn-extralarge {
+    width: 230px;
+    height: 40px;
+  }
+
+  &.btn-circle {
+    border-radius: 50%;
+    &.btn-small {
+      width: 16px;
+      height: 16px;
+    }
+    &.btn-medium {
+      width: 20px;
+      height: 20px;
+    }
+    &.btn-large {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  &.btn-icon {
+    display: block;
+    position: relative;
+    &::before {
+      content: '';
+      display: block;
+      height: 80%;
+      width: 80%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      @include absolute-cover;
+    }
+  }
+
+  &.btn-add::before {
+    @include background-svg('<svg height="256" viewBox="0 0 256 256" width="256" xmlns="http://www.w3.org/2000/svg"><path fill="#FFFFFF" d="M208 122h-74V48c0-3.534-2.466-6.4-6-6.4s-6 2.866-6 6.4v74H48c-3.534 0-6.4 2.466-6.4 6s2.866 6 6.4 6h74v74c0 3.534 2.466 6.4 6 6.4s6-2.866 6-6.4v-74h74c3.534 0 6.4-2.466 6.4-6s-2.866-6-6.4-6z"/></svg>');
+  }
+
+  &.btn-remove::before {
+    @include background-svg('<svg height="256" viewBox="0 0 256 256" width="256" xmlns="http://www.w3.org/2000/svg"><path fill="#FFFFFF" d="M208 134.4H48a6.4 6.4 0 0 1 0-12.8h160a6.4 6.4 0 0 1 0 12.8z"/></svg>');
+  }
+
+  &.btn-cancel::before {
+    @include background-svg('<svg height="256" viewBox="0 0 256 256" width="256" xmlns="http://www.w3.org/2000/svg"><path fill="#CC2929" d="M137.051 128l75.475-75.475c2.5-2.5 2.5-6.551 0-9.051s-6.551-2.5-9.051 0L128 118.949 52.525 43.475c-2.5-2.5-6.551-2.5-9.051 0s-2.5 6.551 0 9.051L118.949 128l-75.475 75.475a6.399 6.399 0 0 0 4.525 10.926 6.38 6.38 0 0 0 4.525-1.875L128 137.051l75.475 75.475c1.25 1.25 2.888 1.875 4.525 1.875s3.275-.625 4.525-1.875c2.5-2.5 2.5-6.551 0-9.051L137.051 128z"/></svg>');
+  }
+
+  &.btn-accept::before {
+    top: 5px;
+    @include background-svg('<svg width="23" height="16" viewBox="0 0 23 16" xmlns="http://www.w3.org/2000/svg"><title>Remove player Button</title><g fill="none" fill-rule="evenodd"><path d="M-6-9h34v34H-6z"/><path stroke="#4B4B4B" d="M.525 8.89l6.038 6.651L21.948.156"/></g></svg>');
+  }
+
+  &.btn-reject::before {
+    width: 60%;
+    height: 60%;
+    @include background-svg('<svg width="17" height="16" viewBox="0 0 17 16" xmlns="http://www.w3.org/2000/svg"><title>Remove player Button</title><g fill="none" fill-rule="evenodd"><path d="M-9-9h34v34H-9z"/><path d="M15.948 15.541L.563.156M.563 15.541L15.948.156" stroke="#4B4B4B"/></g></svg>');
+  }
+
+  &.btn-lucky {
+    background-color: $brand-primary;
+    &::before {
+      width: 60%;
+      height: 60%;
+      @include background-svg('<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><title>Rectangle 11</title><g fill="none" fill-rule="evenodd" opacity=".9"><rect fill="#FFFFFF" width="16" height="16" rx="2"/><circle fill="#000B05" cx="8" cy="8" r="2"/><circle fill="#000B05" cx="12" cy="4" r="2"/><circle fill="#000B05" cx="4" cy="12" r="2"/></g></svg>');
+    }
+  }
+
+  &.btn-captain,
+  &.btn-vice {
+    background-color: $grey-mid;
+    &::before {
+      width: 60%;
+      height: 60%;
+      @include font-size(12);
+      line-height: 1;
+      color: $white;
+    }
+    &.active {
+      background-color: $grey-extradark;
+    }
+  }
+  &.btn-captain::before {
+    content: 'A';
+  }
+  &.btn-vice::before {
+    content: 'V';
+  }
+
+  &.btn-transparent {
+    background-color: transparent;
+  }
+
+  &.btn-primary {
+    background-color: $blue;
+  }
+
+  &.btn-positive {
+    background-color: $green;
+  }
+
+  &.btn-warning {
+    background-color: $orange;
+  }
+
+  &.btn-negative,
+  &.btn-danger {
+    background-color: $red;
+  }
+
+  &.btn-disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+
+}
