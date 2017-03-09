@@ -2,6 +2,10 @@
 
 How the SCSS is organised for the Eredivisie Profcoach games made by Chroma.
 
+### Structure
+
+Please note that the app and static directories are include here for illustration and reference only. They are not intended for use 'as is' in other projects.
+
 #### core
 
 Base set of SCSS variables, mixins and OOCSS base helper classes. These are designed to be super generic and intended to be used across all games and to form the basis for the SCSS in the white label platform product. These styles may be used as the basis for other style frameworks.
@@ -14,11 +18,8 @@ SCSS variables, mixins and OOCSS helper classes that are brand, and possibly gam
 
 The default place for static assets and webfont files. Variables in app/variables set the css font and image base paths to this directory.
 
-### Important note
-
-The app and static directories are include here for reference only. They are not intended for use in other projects.
-
 ### Credits
 
 - Bootstrap 4 for the organisation of variables and the MQ mixins and best practice inspiration
+
 - @tigt and @jakob-e for the inline SVG helper functions (https://codepen.io/tigt/post/optimizing-svgs-in-data-uris)
